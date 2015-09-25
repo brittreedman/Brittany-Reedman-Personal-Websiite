@@ -30,16 +30,8 @@
 		}
 		img{
 			display: block;
-		}
-		div{
-		    margin: 0 -50% 0 0;
-		    position: absolute;
-		    top: 50%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		    background-color: white;
-			border: 2px solid black;
-			padding: 20px;
+			height: 200px;
+			width: 200px;
 		}
 		ul{
 			margin: 0 auto;
@@ -50,28 +42,54 @@
     		display: inline-block;
     		white-space: nowrap;
 		}
+		table{
+			margin: 0 auto;
+		}
+		.frame {
+		    height: 200px;
+		    width: 100%;
+		    white-space: nowrap;
+		    text-align: center;
+		}
+		.helper {
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+		}
+		.container{
+			vertical-align: middle;
+			margin: 0 auto;
+		    background-color: white;
+			border: 2px solid black;
+			width: 800px;
+			height: 205px;
+		}
 	</style>
 </head>
 <body>
-	<div id="content">
-		<table>
-			<tr>
-				<td>
-					<img class="picture" src="under_construction.jpg" width="200" height="200">
-				</td>
-				<td style="vertical-align: top;">
-					<h1>Hi there!</h1>
-					<p>Unfortunately, my website is currently under construction<br>
-						Thanks for understanding and  please get in touch! - Brittany
-					</p>
-					<ul>
-						<li><a style="padding: 0 20pt;" href="mailto:brittanyreedman@gmail.com">Email</a></li>
-						<li><a style="padding: 0 20pt;" href="http://github.com/brittreedman">GitHub</a></li>
-						<li><a style="padding: 0 20pt;" href="https://drive.google.com/file/d/0B6xHmohEc4LSWEdKZXlYUHFKSkE/view?usp=sharing">Resume</a></li>
-					</ul>
-				</td>
-			</tr>
-		</table>
+	<div class=frame>
+    	<span class="helper"></span>
+		<div class="container" id="content">
+			<table>
+				<tr>
+					<td>
+						<img class="picture" src="under_construction.jpg">
+					</td>
+					<td style="vertical-align: top;">
+						<h1>Hi there!</h1>
+						<p>Unfortunately, my website is currently under construction<br>
+							Thanks for understanding and  please get in touch! - Brittany
+						</p>
+						<ul>
+							<li><a style="padding: 0 20pt;" href="mailto:brittanyreedman@gmail.com">Email</a></li>
+							<li><a style="padding: 0 20pt;" href="http://github.com/brittreedman">GitHub</a></li>
+							<li><a style="padding: 0 20pt;" href="https://drive.google.com/file/d/0B6xHmohEc4LSWEdKZXlYUHFKSkE/view?usp=sharing">Resume</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>
+
