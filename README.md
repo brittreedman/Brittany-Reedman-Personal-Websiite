@@ -1,1 +1,1 @@
-# Brittany-Reedman-Personal-Websiite
+# Brittany-Reedman-Personal-Website
