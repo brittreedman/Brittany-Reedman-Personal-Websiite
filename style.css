@@ -1,0 +1,117 @@
+body{
+	background-color: #F5F5F5;
+	margin: 10px;
+}
+h1{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	color: #202020;
+	font-size: 135px;
+	font-family: 'Darleston', 'Helvetica', sans-serif;
+}
+p{
+	text-align: center;
+	font-size: 24px;
+	color: #202020;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+div.nav_bar{
+	margin: 0 auto;
+	height: 75px;
+	padding: 10px;
+}
+div.content{
+	margin: 0 auto;
+	width: 960px;
+	background-color: white;
+	height: auto;
+	padding-bottom: 2px;
+}
+div.name{
+	margin: 0 auto;
+	height: 140px;
+	
+	padding-top: 20px;
+}
+div.footer{
+	margin: 0 auto;
+	height: 100px;
+	padding: 10px;
+}
+ul.header{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+ul.linklist{
+	height: 100px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+li.nav{
+	line-height: 70px;
+	vertical-align: middle;
+	width: 20%;
+	text-align: center;
+	display: block;
+	float: left;
+	border-top-width: 7px;
+	border-top-style: solid;
+}
+li.links{
+	line-height: 100px;
+	vertical-align: middle;
+	width: 20%;
+	text-align: center;
+	display: block;
+	float: left;
+	border-bottom-width: 7px;
+	border-bottom-style: solid;
+}
+a.navlinks{
+	width: 100%;
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #202020;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+#link1 a:hover{
+	background-color: #FFBFE9;
+}
+#link2 a:hover{
+	background-color: #A9C6C6;
+}
+#link3 a:hover{
+	background-color: #FFCC99;
+}
+#link4 a:hover{
+	background-color: #D3F8D3;
+}
+#link5 a:hover{
+	background-color: #E7BCE7;
+}
+<!--
+	@font-face {
+		font-family: Roboto;
+		src: url('roboto/Roboto-Regular.ttf');
+	}
+	.customfont { 
+		font-family: Roboto;
+	}
+-->
+<!--
+	@font-face {
+		font-family: Darleston;
+		src: url('darleston/Darleston.oft');
+	}
+	.customfont { 
+		font-family: "Dragon is coming";
+	}
+-->

@@ -5,100 +5,37 @@
 	<meta name="keywords" content="Brittany, Reedman, TCNJ, The College of New Jersey, computer science, software, software engineering, Women in Computer Science, WiCS">
 	<meta name="description" content="Personal website of Brittany Reedman, computer science major at The College of New Jersey">
 	<title>Brittany Reedman</title>
-	<style type="text/css">
-
-		body{
-			background-color: #F5F5F5;
-			margin: 10px;
-		}
-		h1{
-			text-align: center;
-			display: block;
-			margin: 0 auto;
-			font-size: 80px;
-			font-family: 'Roboto', 'Helvetica', sans-serif;
-		}
-		div.nav_bar{
-			margin: 0 auto;
-			height: 75px;
-			padding: 10px;
-		}
-		div.content{
-			margin: 0 auto;
-			width: 1250px;
-			background-color: white;
-			height: 100vh;
-		}
-		ul{
-			display: inline-block;
-			height: 100%;
-			width: 100%;
-			position: relative;
-			list-style: none;
-			margin: 0 auto;
-			padding: 0;
-		}
-		li.nav{
-			line-height: 70px;
-			vertical-align: middle;
-			width: 16.667%;
-			text-align: center;
-			display: block;
-			float: left;
-			border-top-width: 7px;
-			border-top-style: solid;
-		}
-		a{
-			width: 100%;
-			display: inline-block;
-			font-size: 20px;
-			text-decoration: none;
-			color: #202020;
-			font-family: 'Roboto', 'Helvetica', sans-serif;
-		}
-		#link1 a:hover{
-			background-color: #FFBFE9;
-		}
-		#link2 a:hover{
-			background-color: #A9C6C6;;
-		}
-		#link3 a:hover{
-			background-color: #FFCC99;
-		}
-		#link4 a:hover{
-			background-color: #C3EBFF;
-		}
-		#link5 a:hover{
-			background-color: #D3F8D3;
-		}
-		#link6 a:hover{
-			background-color: #E7BCE7;
-		}
-		<!--
-			@font-face {
-				font-family: Roboto;
-				src: url('roboto/Roboto-Regular.ttf');
-			}
-			.customfont { 
-				font-family: Roboto;
-			}
-		-->
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 </head>
 <body>
 	<div class="content">
 		<div class="nav_bar">
-			<ul>
-				<li id="link1" class="nav" style="border-color: #FFBFE9"><a href="index.html">HOME</a></li>
-				<li id="link2" class="nav" style="border-color: #A9C6C6;"><a href="about.html">ABOUT</a></li>
-				<li id="link3" class="nav" style="border-color: #FFCC99;"><a href="projects.html">PROJECTS</a></li>
-				<li id="link4" class="nav" style="border-color: #C3EBFF"><a href="tennis.html">TENNIS</a></li>
-				<li id="link5" class="nav" style="border-color: #D3F8D3;"><a href="photos.html">PHOTOS</a></li>
-				<li id="link6" class="nav" style="border-color: #E7BCE7;"><a href="contact.html">CONTACT</a></li>
+			<ul class="header">
+				<li id="link1" class="nav" style="border-color: #FFBFE9"><a class="navlinks" href="index.html">HOME</a></li>
+				<li id="link2" class="nav" style="border-color: #A9C6C6;"><a class="navlinks" href="resume.html">RESUME</a></li>
+				<li id="link3" class="nav" style="border-color: #FFCC99"><a class="navlinks" href="projects.html">PROJECTS</a></li>
+				<li id="link4" class="nav" style="border-color: #D3F8D3;"><a class="navlinks" href="tennis.html">TENNIS</a></li>
+				<li id="link5" class="nav" style="border-color: #E7BCE7;"><a class="navlinks" href="contact.html">CONTACT</a></li>
 			</ul>
 		</div>
-		<h1><br>Hi I'm Brittany</h1>
-		<h1> I feel like an idiot </h1>
+		<p>Hi there. My name is</p>
+		<div class="name">
+			<h1>Brittany Reedman</h1>
+		</div>
+		<p>I am a Computer Science and Mathematics major at The College of New Jersey<br>
+		I also play first singles for TCNJ Lions varsity women's tennis team.</p>
+		<p>I am primarily interested in software engineering and network security<br>
+		and I am pursuing an internship for the Summer 2016 in either of these fields.</p>
+		</p>
+		<div class="footer">
+			<ul class="linklist">
+				<li class="links" style="border-color: #FFBFE9"><a href="mailto:brittanyreedman@gmail.com" style="text-decoration:none;"><img src="Images/Mail.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
+				<li class="links" style="border-color: #A9C6C6"><a href="https://www.facebook.com/brittany.reedman" style="text-decoration:none;"><img src="Images/Facebook.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
+				<li class="links" style="border-color: #FFCC99"><a href="https://twitter.com/BrittReedman" style="text-decoration:none;"><img src="Images/Twitter.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
+				<li class="links" style="border-color: #D3F8D3"><a href="https://www.linkedin.com/in/brittanyreedman" style="text-decoration:none;"><img src="Images/LinkedIn.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
+				<li class="links" style="border-color: #E7BCE7"><a href="https://github.com/brittreedman" style="text-decoration:none;"><img src="Images/Github.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
