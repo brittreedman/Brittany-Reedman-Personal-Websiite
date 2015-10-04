@@ -1,21 +1,21 @@
 @font-face {
     font-family: Roboto;
-    src: url('Roboto-Regular-webfont.eot');
-    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular-webfont.woff') format('woff'),
-         url('Roboto-Regular-webfont.ttf') format('truetype'),
-         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    src: url('roboto/Roboto-Regular-webfont.eot');
+    src: url('roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto/Roboto-Regular-webfont.woff') format('woff'),
+         url('roboto/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: Darleston;
-    src: url('darleston-webfont.eot');
-    src: url('darleston-webfont.eot?#iefix') format('embedded-opentype'),
-         url('darleston-webfont.woff2') format('woff2'),
-         url('darleston-webfont.woff') format('woff'),
-         url('darleston-webfont.ttf') format('truetype'),
-         url('darleston-webfont.svg#darlestonregular') format('svg');
+    src: url('darleston/darleston-webfont.eot');
+    src: url('darleston/darleston-webfont.eot?#iefix') format('embedded-opentype'),
+         url('darleston/darleston-webfont.woff2') format('woff2'),
+         url('darleston/darleston-webfont.woff') format('woff'),
+         url('darleston/darleston-webfont.ttf') format('truetype'),
+         url('darleston/darleston-webfont.svg#darlestonregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -106,7 +106,7 @@ h1{
 }
 p{
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 	color: #202020;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -126,7 +126,7 @@ a.navlinks{
 }
 a.paralinks{
 	margin: 0 auto;
-	font-size: 22px;
+	font-size: 20px;
 	text-decoration: none;
 	margin: 0 0 0 30px;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
