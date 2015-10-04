@@ -16,10 +16,17 @@ p{
 	color: #202020;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+p.about{
+	text-align: left;
+	border-left: 5px solid;
+	border-right: 5px solid;
+	padding: 0 15px;
+}
 div.nav_bar{
 	margin: 0 auto;
 	height: 75px;
 	padding: 10px;
+	margin-bottom: 20px;
 }
 div.content{
 	margin: 0 auto;
@@ -39,6 +46,20 @@ div.footer{
 	height: 100px;
 	padding: 10px;
 }
+div.container{
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+}
+div.projects{
+	padding: 10px;
+	display: inline-block;
+	width: 44%;
+	height: 200px;
+	margin: 0 auto;
+	border: 3px solid;
+	margin: 10px;
+}
 ul.header{
 	display: inline-block;
 	height: 100%;
@@ -51,7 +72,7 @@ ul.header{
 ul.linklist{
 	height: 100px;
 	list-style: none;
-	margin: 0 auto;
+	margin: auto;
 	padding: 0;
 }
 li.nav{
@@ -82,20 +103,44 @@ a.navlinks{
 	color: #202020;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-#link1 a:hover{
+#link1{
+	border-color: #FFBFE9;
+}
+#link2{
+	border-color: #A9C6C6;
+}
+#link3{
+	border-color: #FFCC99;
+}
+#link4{
+	border-color: #ACD9AC;
+}
+#link5{
+	border-color: #E7BCE7;
+}
+#link1 .navlinks:hover{
 	background-color: #FFBFE9;
 }
-#link2 a:hover{
+#link2 .navlinks:hover{
 	background-color: #A9C6C6;
 }
-#link3 a:hover{
+#link3 .navlinks:hover{
 	background-color: #FFCC99;
 }
-#link4 a:hover{
-	background-color: #D3F8D3;
+#link4 .navlinks:hover{
+	background-color: #ACD9AC;
 }
-#link5 a:hover{
+#link5 .navlinks:hover{
 	background-color: #E7BCE7;
+}
+#resumelink .navlinks:hover{
+	background-color: #FFBFE9;
+}
+#projects{
+	border: 4px solid #CCCCCC;
+}
+#projects:hover{
+	border: 4px solid #525252;
 }
 <!--
 	@font-face {

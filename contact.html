@@ -13,25 +13,75 @@
 		<div class="nav_bar">
 			<ul class="header">
 				<li id="link1" class="nav" style="border-color: #FFBFE9"><a class="navlinks" href="index.html">HOME</a></li>
-				<li id="link2" class="nav" style="border-color: #A9C6C6;"><a class="navlinks" href="resume.html">RESUME</a></li>
-				<li id="link3" class="nav" style="border-color: #FFCC99"><a class="navlinks" href="projects.html">PROJECTS</a></li>
-				<li id="link4" class="nav" style="border-color: #D3F8D3;"><a class="navlinks" href="tennis.html">TENNIS</a></li>
+				<li id="link2" class="nav" style="border-color: #A9C6C6;"><a class="navlinks" href="about.html">ABOUT</a></li>
+				<li id="link3" class="nav" style="border-color: #FFCC99"><a class="navlinks" href="resume.html">RESUME</a></li>
+				<li id="link4" class="nav" style="border-color: #ACD9AC;"><a class="navlinks" href="projects.html">PROJECTS</a></li>
 				<li id="link5" class="nav" style="border-color: #E7BCE7;"><a class="navlinks" href="contact.html">CONTACT</a></li>
 			</ul>
 		</div>
-		<p>This page is currently under construction.<br>
-			Thanks for understand and please check back later.<br>
-			-Brittany</p>
+        <div class="container" style="width: 84%;">
+        	<form action="https://docs.google.com/forms/d/1oph9QceLaPiWwivZH7ZLdUTW1azeHk-jYrc_DXKY674/formResponse" method="POST">
+			<p style="text-align: left; font-size: 18px;">
+				First Name<br><input style="width: 100px; line-height: 20px; font-size: 16px; margin-top: 5px; border: 3px solid #FFBFE9;" type="text" name="entry.1300795319" value="" class="ss-q-short" id="entry_1300795319" dir="auto" aria-label="First Name" aria-required="true" required="" title=""><br style="font-size: 30px;">
+				
+				Last Name<br><input style="width: 100px; line-height: 20px; font-size: 16px; margin-top: 5px; border: 3px solid #A9C6C6;" type="text" name="entry.1499945226" value="" class="ss-q-short" id="entry_1499945226" dir="auto" aria-label="Last Name" aria-required="true" required="" title=""/><br style="font-size: 30px;">
+				
+				Email<br><input style="width: 200px; line-height: 20px; font-size: 16px; margin-top: 5px; border: 3px solid #FFCC99;" class="numtext" type="text" name="entry.1666964763" value="" class="ss-q-short" id="entry_1666964763" dir="auto" aria-label="Email" aria-required="true" required="" title=""/><br style="font-size: 30px;">
+				
+				Message<br><textarea style="width: 500px; height: 200px; font-size: 16px; margin-top: 5px; border: 3px solid #ACD9AC;" class="numtext" type="text" name="entry.1306528413" value="" class="ss-q-short" id="entry_1306528413" dir="auto" aria-label="Message" aria-required="true" required="" title=""></textarea>
+			</p>
+			<button style="text-align: center; font-size: 18px; font-family: 'Roboto', 'Helvetica', sans-serif; width: 75px; height: 30px; background-color: white; margin-bottom: 20px; border: 3px solid #E7BCE7;" onclick="postContactToGoogle()" type="button">Submit</button>
+		</div>
 		<div class="footer">
 			<ul class="linklist">
-				<li class="links" style="border-color: #FFBFE9"><a href="mailto:brittanyreedman@gmail.com" style="text-decoration:none;"><img src="Images/Mail.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
-				<li class="links" style="border-color: #A9C6C6"><a href="https://www.facebook.com/brittany.reedman" style="text-decoration:none;"><img src="Images/Facebook.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
-				<li class="links" style="border-color: #FFCC99"><a href="https://twitter.com/BrittReedman" style="text-decoration:none;"><img src="Images/Twitter.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
-				<li class="links" style="border-color: #D3F8D3"><a href="https://www.linkedin.com/in/brittanyreedman" style="text-decoration:none;"><img src="Images/LinkedIn.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
-				<li class="links" style="border-color: #E7BCE7"><a href="https://github.com/brittreedman" style="text-decoration:none;"><img src="Images/Github.png" width="50" height="50" style="vertical-align:middle;" border="0"></a></li>
+				<li id="link1" class="links"><a href="mailto:brittanyreedman@gmail.com" style="text-decoration:none;"><img src="Images/Mail.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
+				<li id="link2" class="links"><a href="https://www.facebook.com/brittany.reedman" style="text-decoration:none;"><img src="Images/Facebook.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
+				<li id="link3" class="links"><a href="https://twitter.com/BrittReedman" style="text-decoration:none;"><img src="Images/Twitter.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
+				<li id="link4" class="links"><a href="https://www.linkedin.com/in/brittanyreedman" style="text-decoration:none;"><img src="Images/LinkedIn.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
+				<li id="link5" class="links"><a href="https://github.com/brittreedman" style="text-decoration:none;"><img src="Images/Github.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
 			</ul>
 		</div>
 	</div>
 </div>
+<script>
+    function postContactToGoogle() {
+        var first = $('#entry_1300795319').val();
+        var last = $('#entry_1499945226').val();
+        var email = $('#entry_1666964763').val();
+        var message = $('#entry_1306528413').val();
+
+        var complete = true;
+        if(first.length == 0||last.length == 0||email.length == 0||message.length == 0){
+            alert("Please complete all form items and submit again.");
+            complete = false;
+        }
+        if(complete == true){
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1oph9QceLaPiWwivZH7ZLdUTW1azeHk-jYrc_DXKY674/formResponse",
+                data: {"entry.1300795319" : first, "entry.1499945226" : last, "entry.1666964763" : email, "entry.1306528413" : message},
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        window.location.replace("success.html");
+                    },
+                    200: function () {
+                        window.location.replace("success.html");
+                    }
+                }
+            });
+        }
+    }
+</script>
+<script type="text/javascript"> 
+	function stopRKey(evt) { 
+		var evt = (evt) ? evt : ((event) ? event : null); 
+		var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+		if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+	} 
+	document.onkeypress = stopRKey; 
+</script>
+<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript"></script>
 </body>
 </html>
