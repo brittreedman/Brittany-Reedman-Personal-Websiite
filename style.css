@@ -48,6 +48,7 @@ div.nav_bar{
 	height: 75px;
 	padding: 10px;
 	margin-bottom: 20px;
+	background-color: white;
 }
 div.content{
 	margin: 0 auto;
@@ -59,7 +60,6 @@ div.content{
 div.name{
 	margin: 0 auto;
 	height: 140px;
-	
 	padding-top: 20px;
 }
 div.footer{
@@ -97,7 +97,7 @@ ul.footerlinks{
 	padding: 0;
 }
 li.nav{
-	line-height: 70px;
+	line-height: 90px;
 	vertical-align: middle;
 	width: 20%;
 	text-align: center;
