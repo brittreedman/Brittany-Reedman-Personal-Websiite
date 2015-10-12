@@ -9,13 +9,12 @@
     font-style: normal;
 }
 @font-face {
-	font-family: Darleston;
-    src: url('darleston/darleston-webfont.eot');
-    src: url('darleston/darleston-webfont.eot?#iefix') format('embedded-opentype'),
-         url('darleston/darleston-webfont.woff2') format('woff2'),
-         url('darleston/darleston-webfont.woff') format('woff'),
-         url('darleston/darleston-webfont.ttf') format('truetype'),
-         url('darleston/darleston-webfont.svg#darlestonregular') format('svg');
+    font-family: Champagne;
+    src: url('champagne/cac_champagne-webfont.eot');
+    src: url('champagne/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('champagne/cac_champagne-webfont.woff') format('woff'),
+         url('champagne/cac_champagne-webfont.ttf') format('truetype'),
+         url('champagne/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,6 +31,14 @@ div.content{
     width: 100%;
     height: auto;
     background-color: white;
+}
+div.projects{
+    padding: 1vw;
+    display: block;
+    width: 90%;
+    height: 30vw;
+    border: 1vw solid;
+    margin: 5vw auto;
 }
 ul.header{
     width: 100%;
@@ -59,7 +66,7 @@ a.navlinks{
     text-decoration: none;
 }
 p{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
     font-size: 3.8vw;
@@ -67,14 +74,25 @@ p{
     font-family: 'Roboto', 'Helvetica', sans-serif;
     padding: 0;
 }
+p.about{
+    text-align: left;
+    border-left: 1vw solid;
+    border-right: 1vw solid;
+    padding: 0 2vw;
+    margin: 3vw auto;
+}
+p.projects{
+    font-size: 2.7vw;
+    margin: 1vw auto;
+}
 h1{
     text-align: center;
     margin: 3% auto;
     color: #202020;
     font-size: 17vw;
-    font-family: 'Darleston', 'Helvetica', sans-serif;
+    font-family: 'Champagne', 'Helvetica', sans-serif;
 }
-img{
+img.footer{
     width: 6vw;
     height: 6vw;
     margin: 1.5vw auto;
@@ -96,6 +114,24 @@ li.links{
     border-bottom: 1vw solid;
     border-top: 1vw solid;
 }
+input{
+    font-size: 2.8vw;
+    border: .6vw solid;
+}
+textarea{
+    font-size: 2.8vw;
+    border: .6vw solid;
+}
+button{
+    text-align: center;
+    font-size: 2.8vw;
+    width: 15%;
+    height: 4.8vw;
+    background-color: white;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    border: .6vw solid;
+}
 #link1{
     border-color: #FFBFE9;
 }
@@ -110,4 +146,7 @@ li.links{
 }
 #link5{
     border-color: #E7BCE7;
+}
+#projects{
+    border: .5vw solid #CCCCCC;
 }
