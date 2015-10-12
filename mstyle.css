@@ -8,16 +8,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: Champagne;
-    src: url('champagne/cac_champagne-webfont.eot');
-    src: url('champagne/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
-         url('champagne/cac_champagne-webfont.woff') format('woff'),
-         url('champagne/cac_champagne-webfont.ttf') format('truetype'),
-         url('champagne/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 body{
     background-color: white;
     margin: 0;
@@ -89,8 +79,8 @@ h1{
     text-align: center;
     margin: 3% auto;
     color: #202020;
-    font-size: 17vw;
-    font-family: 'Champagne', 'Helvetica', sans-serif;
+    font-size: 10vw;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 img.footer{
     width: 6vw;
