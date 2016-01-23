@@ -3,12 +3,12 @@
 <head>
 	<meta name="author" content="Brittany Reedman">
 	<meta name="keywords" content="Brittany, Reedman, TCNJ, The College of New Jersey, computer science, software, software engineering, Women in Computer Science, WiCS">
-	<meta name="description" content="Personal website of Brittany Reedman, computer science major at The College of New Jersey">
+	<meta name="SiteDescription" content="Personal website of Brittany Reedman, computer science major at The College of New Jersey">
 	<title>Brittany Reedman</title>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+	<script src="scripts.js"></script>
 </head>
 <body>
-	<script src="scripts.js"></script>
 	<div class="content" id="cont">
 		<div class="nav">
 			<ul class="nav">
@@ -82,5 +82,23 @@
 	</script>
 	<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
 	<script type="text/javascript"></script>
+	<script type="text/javascript">
+		window.addEventListener("resize", adjustWidth);
+		window.addEventListener("load", adjustWidth);
+		function adjustWidth(){
+			var w = window.innerWidth;
+			if(w > 1200){
+				document.getElementById('cont').style.width = "1044px";
+			}
+			else{
+				if(w < 900){
+					document.getElementById('cont').style.width = "788px";
+				}
+				else{
+					document.getElementById('cont').style.width = "90%";
+				}
+			}
+		}
+	</script>
 </body>
 </html>
