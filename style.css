@@ -23,77 +23,27 @@ body{
 	background-color: #F5F5F5;
 	margin: 10px;
 }
-h1{
-	text-align: center;
-	display: block;
-	margin: 0 auto;
-	color: #202020;
-	font-size: 135px;
-	font-family: 'Darleston', 'Helvetica', sans-serif;
-}
-p{
-	text-align: center;
-	font-size: 24px;
-	color: #202020;
-	font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-p.about{
-	text-align: left;
-	border-left: 5px solid;
-	border-right: 5px solid;
-	padding: 0 15px;
-}
-div.nav_bar{
-	margin: 0 auto;
-	height: 75px;
-	padding: 10px;
-	margin-bottom: 20px;
-	background-color: white;
-}
 div.content{
 	margin: 0 auto;
 	width: 960px;
 	background-color: white;
 	height: auto;
-	padding-bottom: 2px;
+	padding: 2px 0;`
 }
-div.name{
+div.nav{
 	margin: 0 auto;
-	height: 140px;
-	padding-top: 20px;
-}
-div.footer{
-	margin: 0 auto;
-	height: 100px;
+	height: 110px;
 	padding: 10px;
+	margin-bottom: 20px;
+	background-color: white;
 }
-div.container{
-	width: 95%;
+ul.nav{
+	display: inline-block;
 	height: auto;
-	margin: 0 auto;
-}
-div.projects{
-	padding: 10px;
-	display: inline-block;
-	width: 44%;
-	height: 200px;
-	margin: 0 auto;
-	border: 3px solid;
-	margin: 10px;
-}
-ul.header{
-	display: inline-block;
-	height: 100%;
 	width: 100%;
 	position: relative;
 	list-style: none;
 	margin: 0 auto;
-	padding: 0;
-}
-ul.footerlinks{
-	height: 100px;
-	list-style: none;
-	margin: auto;
 	padding: 0;
 }
 li.nav{
@@ -106,7 +56,26 @@ li.nav{
 	border-top-width: 7px;
 	border-top-style: solid;
 }
-li.links{
+a.nav{
+	width: 100%;
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #202020;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+div.footer{
+	margin: 0 auto 5px auto;
+	height: 100px;
+	padding: 10px;
+}
+ul.footer{
+	height: 100px;
+	list-style: none;
+	margin: auto;
+	padding: 0;
+}
+li.footer{
 	line-height: 100px;
 	vertical-align: middle;
 	width: 20%;
@@ -115,6 +84,16 @@ li.links{
 	float: left;
 	border-bottom-width: 7px;
 	border-bottom-style: solid;
+	text-decoration: none;
+}
+div.text{
+	margin: 0 auto;
+	width: 90%;
+}
+div.name{
+	margin: 0 auto;
+	height: 140px;
+	padding-top: 20px;
 }
 h1{
 	text-align: center;
@@ -137,57 +116,61 @@ p.about{
 	border-right: 5px solid;
 	padding: 0 15px;
 }
-a.navlinks{
-	width: 100%;
-	display: inline-block;
-	font-size: 20px;
-	text-decoration: none;
-	color: #202020;
-	font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-a.paralinks{
+div.projects{
 	margin: 0 auto;
-	font-size: 24px;
-	text-decoration: none;
-	margin: 0 0 0 30px;
-	font-family: 'Roboto', 'Helvetica', sans-serif;
+	height: auto;
+	padding: 10px;
+	width: 90%;
+	text-align: center;
 }
-#link1{
-	border-color: #FFBFE9;
+ul.projects{
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	position: relative;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
 }
-#link2{
-	border-color: #A9C6C6;
+li.projects{
+	vertical-align: middle;
+	width: 47%;
+	text-align: center;
+	display: block;
+	float: left;
+	border: 3px solid;
+	height: 200px;
+	line-height: 200px;
+	margin: 0 1% 10px 1%;
 }
-#link3{
-	border-color: #FFCC99;
+li.resume{
+	width: 35%;
+	display: block;
+	float: left;
+	height: auto;
+	margin: 0 7% 0 7%;
 }
-#link4{
-	border-color: #ACD9AC;
+img.projects{
+	border: 4px solid #CCCCCC;
 }
-#link5{
-	border-color: #E7BCE7;
+img.projects:hover{
+	border: 4px solid #525252;
 }
-#link1 .navlinks:hover{
+#nav1 a.nav:hover{
 	background-color: #FFBFE9;
 }
-#link2 .navlinks:hover{
+#nav2 a.nav:hover{
 	background-color: #A9C6C6;
 }
-#link3 .navlinks:hover{
+#nav3 a.nav:hover{
 	background-color: #FFCC99;
 }
-#link4 .navlinks:hover{
+#nav4 a.nav:hover{
 	background-color: #ACD9AC;
 }
-#link5 .navlinks:hover{
+#nav5 a.nav:hover{
 	background-color: #E7BCE7;
 }
 #resumelink .navlinks:hover{
 	background-color: #FFBFE9;
-}
-#projects{
-	border: 4px solid #CCCCCC;
-}
-#projects:hover{
-	border: 4px solid #525252;
 }
