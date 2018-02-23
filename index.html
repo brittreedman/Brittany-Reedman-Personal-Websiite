@@ -5,60 +5,42 @@
 	<meta name="keywords" content="Brittany, Reedman, TCNJ, The College of New Jersey, computer science, software, software engineering, Women in Computer Science, WiCS">
 	<meta name="description" content="Personal website of Brittany Reedman, computer science major at The College of New Jersey">
 	<title>Brittany Reedman</title>
-	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-	<script type="text/javascript">
-	  	if (screen.width <= 800) {
-	    	window.location = "http://brittanyreedman.com/m.index.html";
-	  	}
-	</script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <script type="text/javascript">
+        $('ul.nav').find('a').click(function(){
+            var $href = $(this).attr('href');
+            var $anchor = $('#' + $href).offset();
+            window.scrollTo($anchor.left,$anchor.top);
+            return false;
+        });
+    </script>
 </head>
 <body>
-	<div class="content" id="cont">
-		<div class="nav">
-			<ul class="nav">
-				<li class="nav" id="nav1" style="border-color: #FFBFE9;"><a class="nav" href="index.html">HOME</a></li>
-				<li class="nav" id="nav2" style="border-color: #A9C6C6;"><a class="nav" href="about.html">ABOUT</a></li>
-				<li class="nav" id="nav3" style="border-color: #FFCC99"><a class="nav" href="resume.html">RESUME</a></li>
-				<li class="nav" id="nav4" style="border-color: #ACD9AC;"><a class="nav" href="projects.html">PROJECTS</a></li>
-				<li class="nav" id="nav5" style="border-color: #E7BCE7;"><a class="nav" href="contact.html">CONTACT</a></li>
-			</ul>
-		</div>
-		<div class="text">
-			<p>Hi there. My name is</p>
-			<div class="name" style="width: auto; max-width: 100%">
-				<h1>Brittany Reedman</h1>
-			</div>
-			<p>I am a Computer Science and Mathematics major at The College of New Jersey.  I am president of Women in Computer Science and secretary of ACM at my school and also play first singles for the TCNJ Lions varsity women's tennis team.</p>
-			<p>I am primarily interested in software engineering and machine learning and am thrilled to be given the opportunity be an Explorer Intern at Microsoft over the summer of 2016.</p>
-			</p>
-		</div>
-		<div class="footer">
-			<ul class="footer">
-				<li class="footer" style="border-color: #FFBFE9;"><a href="mailto:brittanyreedman@gmail.com"><img src="Images/Mail.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
-				<li class="footer" style="border-color: #A9C6C6;"><a href="https://www.facebook.com/brittany.reedman"><img src="Images/Facebook.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
-				<li class="footer" style="border-color: #FFCC99;"><a href="https://twitter.com/BrittReedman"><img src="Images/Twitter.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
-				<li class="footer" style="border-color: #ACD9AC;"><a href="https://www.linkedin.com/in/brittanyreedman"><img src="Images/LinkedIn.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
-				<li class="footer" style="border-color: #E7BCE7;"><a href="https://github.com/brittreedman"><img src="Images/Github.png" width="50px" height="50px" style="vertical-align:middle;" border="0"></a></li>
-			</ul>
-		</div>
-	</div>
-	<script type="text/javascript">
-		window.addEventListener("resize", adjustWidth);
-		window.addEventListener("load", adjustWidth);
-		function adjustWidth(){
-			var w = window.innerWidth;
-			if(w > 1200){
-				document.getElementById('cont').style.width = "1044px";
-			}
-			else{
-				if(w < 900){
-					document.getElementById('cont').style.width = "788px";
-				}
-				else{
-					document.getElementById('cont').style.width = "90%";
-				}
-			}
-		}
-	</script>
-</body>
+    <div class="nav">
+        <ul class="nav">
+            <li class="nav"><a class="nav" style="border-bottom-color: #b30039" href="#tab1">HOME</a></li>
+            <li class="nav"><a class="nav" style="border-bottom-color: #6b00b3" href="#tab2">ABOUT</a></li>
+            <li class="nav"><a class="nav" style="border-bottom-color: #006999" href="#tab3">PROJECTS</a></li>
+            <li class="nav"><a class="nav" style="border-bottom-color: #215f41" href="#tab4">CONTACT</a></li>
+		</ul>
+    </div>
+    <div class="content">
+        <div id="tab1"></div>
+        <div style="background-color: #ffe6ee">
+            <img src="Images/me.png" width="200px" border="0">
+            <h1>Hi I'm Brittany</h1>
+            <p>Senior at The College of New Jersey<p>
+            <p>Computer science and applied math double major<p>
+            <p>Future software engineer at Facebook Seattle
+        </div>
+        <div id="tab2"></div>
+        <div style="background-color: #f9e6ff">Stuff will go here</div>
+        <div id="tab3"></div>
+        <div style="background-color: #e6f7ff">and here</div>
+        <div id="tab4"></div>
+        <div style="background-color: #d9f2e6">and even here</div>
+        <div></div> 
+    </div>
+    </body>    
 </html>
