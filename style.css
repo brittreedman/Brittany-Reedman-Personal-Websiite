@@ -14,6 +14,8 @@ body, div.content{
     margin: 0;
     padding: 0;
 }
+
+/* Navigation bar CSS */
 div.nav{
     position: fixed;
     width: 100%;
@@ -27,7 +29,7 @@ ul.nav{
 	position: relative;
 	list-style: none;
 	padding: 20px 0;
-    margin: 0;
+    margin: ;
 }
 li.nav{
 	vertical-align: middle;
@@ -35,6 +37,9 @@ li.nav{
 	text-align: center;
 	display: block;
 	float: left;
+}
+a {
+    color: inherit;
 }
 a.nav{
     padding: 3px 5px;
@@ -46,39 +51,67 @@ a.nav{
 a.nav:hover{
     border-bottom: 3px solid rgba(0,0,0,0);
 }
+
+/* General Content CSS */
 .content div:nth-of-type(odd) {
-    height: 120px;
+    height: 110px;
 }
 .content div:nth-of-type(even) {
     margin: 0;
-    padding: 10px 10%;
+    padding: 10px 20%;
+}
+.content div {
+    text-align: left;
 }
 .content div:nth-child(1) {
     background-color: #ffe6ee;
 }
+
+/* Content Section 1 */
+.content div:nth-child(2) {
+    text-align: center;
+}
 .content div:nth-child(3) {
-    background: linear-gradient(#ffe6ee, #f9e6ff);
-}
-.content div:nth-child(5) {
-    background: linear-gradient(#f9e6ff, #e6f7ff);
-}
-.content div:nth-child(7) {
-    background: linear-gradient(#e6f7ff, #d9f2e6);
-}
-.content div:nth-child(9) {
-    background: linear-gradient(#d9f2e6, white);
-}
-h1 {
-    font-family: 'Arvo', serif;
-    text-align: center;
-}
-p{
-    text-align: center;
-    font-size: 16px;
-    color: #202020;
-    font-family: 'Arvo', serif;
+    background: linear-gradient(#ffe6ee,#f9e6ff);
 }
 img {
     margin: 0 auto;
     display: block;
+}
+
+/* Content Section 2 */
+span.expand {
+    cursor: pointer;
+    font-family: 'Courier', sans-serif;
+    margin: 0 5px 0 0;
+}
+.content div:nth-child(5) {
+    background: linear-gradient(#f9e6ff,#e6f7ff);
+}
+.content div:nth-child(4) ul {
+    margin-left: .25em;
+    list-style-type: none;
+}
+
+/* Content Section 3 */
+.content div:nth-child(7){
+    background: linear-gradient(#e6f7ff,#d9f2e6);
+}
+
+/* Content Section 4 */
+.content div:nth-child(9) {
+    background: linear-gradient(#d9f2e6, white);
+}
+
+/* Text CSS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', serif;
+}
+h3 {
+    margin: 2em 0 1em 0;
+}
+p{
+    font-size: 16px;
+    color: #202020;
+    font-family: 'Arvo', serif;
 }
