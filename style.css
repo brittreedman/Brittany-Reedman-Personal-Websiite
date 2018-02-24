@@ -8,7 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body, div.content{
+body, #content{
     width: 100%;
     background-color: white;
     margin: 0;
@@ -41,38 +41,40 @@ li.nav{
 a {
     color: inherit;
 }
-a.nav{
+a.navlinks{
     padding: 3px 5px;
     font-size: 14px;
 	text-decoration: none;
 	color: #202020;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
+    border-bottom: 0px solid rgba(255,255,255,0);
 }
-a.nav:hover{
-    border-bottom: 3px solid rgba(255,255,255,0);
+a.navlinks:hover{
+    border-bottom-width: 3px !important;
 }
 
 /* General Content CSS */
-.content div:nth-of-type(odd) {
-    height: 110px;
+#content > div.transition {
+    height: 20vh;
 }
-.content div:nth-of-type(even) {
+#content > div:not(.transition) {
     margin: 0;
-    padding: 10px 20%;
+    padding: 0 20vw 10vh 20vw;
+    min-height: 80vh;
+    display: table;
+    width: 100vw;
+    box-sizing: border-box;
 }
-.content div {
-    text-align: left;
-}
-.content div:nth-child(1) {
-    background-color: #ffe6ee;
+
+#content > div > div {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
 }
 
 /* Content Section 1 */
-.content div:nth-child(2) {
+#content > div:nth-child(1) {
     text-align: center;
-}
-.content div:nth-child(3) {
-    background: linear-gradient(#ffe6ee,#f9e6ff);
 }
 img {
     margin: 0 auto;
@@ -85,22 +87,9 @@ span.expand {
     font-family: 'Courier', sans-serif;
     margin: 0 5px 0 0;
 }
-.content div:nth-child(5) {
-    background: linear-gradient(#f9e6ff,#e6f7ff);
-}
-.content div:nth-child(4) ul {
+#content div:nth-child(2) ul {
     margin-left: .25em;
     list-style-type: none;
-}
-
-/* Content Section 3 */
-.content div:nth-child(7){
-    background: linear-gradient(#e6f7ff,#d9f2e6);
-}
-
-/* Content Section 4 */
-.content div:nth-child(9) {
-    background: linear-gradient(#d9f2e6, white);
 }
 
 /* Text CSS */

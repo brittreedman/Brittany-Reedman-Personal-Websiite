@@ -2,19 +2,23 @@
 <html>
 <head>
 	<meta name="author" content="Brittany Reedman">
-	<meta name="keywords" content="Brittany, Reedman, TCNJ, The College of New Jersey, computer science, software, software engineering, Women in Computer Science, WiCS">
-	<meta name="description" content="Personal website of Brittany Reedman, computer science major at The College of New Jersey">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 	<title>Brittany Reedman</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
+    
+        // Controls scrolling
         $('ul.nav').find('a').click(function(){
             var $href = $(this).attr('href');
             var $anchor = $('#' + $href).offset();
             window.scrollTo($anchor.left,$anchor.top);
             return false;
         });
+        
+        // ul expand functionality
         function expand(id, index) {
             display = document.getElementById(id).style.display;
             if (display === "none") {
@@ -26,77 +30,71 @@
                 document.getElementById(id).style.display = "none";
             }
         }
+
+        var tabStuff = function() {
+            var size = document.getElementsByClassName("navlinks").length;
+            var sections = document.getElementsByClassName("transition");
+            var found = false;
+            for (i = size - 1; i >= 0 && sections.length != 0; i--) {
+                section = sections[i].getBoundingClientRect();
+                px = (section.top <= 1 && found == false) ? "3px" : "0px";
+                if (px === "3px") found = true;
+                document.getElementsByClassName('navlinks')[i].style.borderBottomWidth = px;
+            }
+        };
+
+        window.onscroll = tabStuff;
+         
+        var navColors = ["#b30039", "#6b00b3", "#006999", "#4f9900"];
+        var sectionColors = ["#ffe6ee", "#f9e6ff", "#e6f7ff", "#f3ffe6"];
+        window.onload = function() {
+            navbar = document.getElementsByClassName("navlinks");
+            content = document.getElementById("content");
+            sections = content.childNodes;
+            index = 0;
+            for (i = 0; i < navbar.length; i++) {
+                navbar[i].style.borderBottomColor = navColors[i];
+                while (sections[index].tagName !== "DIV") index++;
+                sections[index].style.background = sectionColors[i];
+                content.insertBefore(makeTransition(i), sections[index]);
+                index += 2; 
+            }
+            tabStuff();
+        }
+    
+        function makeTransition(index) {
+            topColor = (index === 0) ? sectionColors[index] : sectionColors[index - 1];
+            transition = document.createElement("div");
+            transition.style.background = `linear-gradient(${topColor}, ${sectionColors[index]})`;
+            transition.classList.add('transition');
+            transition.setAttribute("id", "tab" + (index + 1));
+            return transition; 
+        }
     </script>
 </head>
 <body>
     <div class="nav">
         <ul class="nav">     
-            <li class="nav"><a class="nav" style="border-bottom-color: #b30039" href="#tab1">HOME</a></li>
-            <li class="nav"><a class="nav" style="border-bottom-color: #6b00b3" href="#tab2">BACKGROUND</a></li>
-            <li class="nav"><a class="nav" style="border-bottom-color: #006999" href="#tab3">PROJECTS</a></li>
-            <li class="nav"><a class="nav" style="border-bottom-color: #215f41" href="#tab4">CONTACT</a></li>
+            <li class="nav"><a class="navlinks" href="#tab1">HOME</a></li>
+            <li class="nav"><a class="navlinks" href="#tab2">BACKGROUND</a></li>
+            <li class="nav"><a class="navlinks" href="#tab3">PROJECTS</a></li>
+            <li class="nav"><a class="navlinks" href="#tab4">CONTACT</a></li>
 		</ul>
     </div>
-    <div class="content">
-        <div id="tab1"></div>
-        <div style="background-color: #ffe6ee">
-            <img src="Images/me.png" width="200px" border="0">
-            <h1>Hi I'm Brittany</h1>
-            <p>Senior at The College of New Jersey<p>
-            <p>Computer science and applied math double major<p>
-            <p>Future software engineer at Facebook Seattle<p>
-            <p>Find my resume <a href="ReedmanResume.pdf" target="_blank">here</a></p>
+    <div id="content">
+        <div>
+            <div>
+                <img src="Images/me.png" width="200px" border="0">
+                <h1>Hi I'm Brittany</h1>
+                <p>Senior at The College of New Jersey<p>
+                <p>Computer science and applied math double major<p>
+                <p>Future software engineer at Facebook Seattle<p>
+                <p>Find my resume <a href="ReedmanResume.pdf" target="_blank">here</a></p>
+            </div>
         </div>
-        <div id="tab2"></div>
-        <div style="background-color: #f9e6ff">
-            <h3><span class="expand" onclick="expand('skills', 0)">[+]</span> Skills</h3>
-            <ul id="skills" style="display: none;">
-                <li><p>Proficient: Java, Python, C, Typescript, Javascript, HTML, CSS, Node.js, Matlab, Mathematica<p></li>
-                <li><p>Past Experience: React.js, Scheme, OCaml, Prolog, C++, Excel VBA, Swift</p></li>
-            </ul>    
-            <h3><span class="expand" onclick="expand('industry', 1)">[+]</span> Industry</h3>
-            <ul id="industry" style="display: none;">
-                <li><p>August 2018: Future Software Engineer at Facebook</p></li>
-                <li><p>Summer 2017: Software Engineering Intern at Microsft</p></li>
-                <li><p>Summer 2016: Explorer Intern at Microsoft</p></li>
-                <li><p>Fall 2016 to Fall 2017: Computer Science and Math Tutor at The College of New Jersey</p></li> 
-            </ul>    
-            <h3><span class="expand" onclick="expand('research', 2)">[+]</span> Research</h3>
-            <ul id="research" style="display: none;">
-                <li><p>Spring 2018: Investigating Active Learning as a Mentored Research Student of Dr. Michael Bloodgood</p></li>
-            </ul>
-            <h3><span class="expand" onclick="expand('leadership', 3)">[+]</span> Current Leadership</h3>
-            <ul id="leadership" style="display: none;">
-                <li><p>Captain of the Varisty Women's Tennis Team at The College of New Jersey</p></li>
-                <li><p>President of Women in Computer Science</p></li>
-                <li><p>Vice President of the Association for Computing Machinery</p></li>
-                <li><p>President of Upsilon Pi Epsilon, Computer Science Honor Society</p></li>
-                <li><p>HackTCNJ lead organizer</p></li>
-            </ul>
-            <h3><span class="expand" onclick="expand('past', 4)">[+]</span> Past Leadership</h3>
-            <ul id="past" style="display: none;">
-                <li><p>Treasurer of the Association for Computing Machinery</p></li>
-                <li><p>Secretary of the Association for Computing Machinery</p></li>
-                <li><p>Secretary of Pi Mu Epsilon, Mathematics Honor Society</p></li>
-                <li><p>Founder of the Williamstown Tennis Program</p></li>
-            </ul>    
-            <h3><span class="expand" onclick="expand('awards', 5)">[+]</span> Awards</h3>
-            <ul id="awards" style="display:none;">
-                <li><p>2017 Facebook Grace Hopper Celebration Scholarship</p></li>
-                <li><p>2017 Google Women Techmakers Scholar</p></li>
-                <li><p>2017 The College of New Jersey Computer Science Junior Award Recipient</p></li>
-                <li><p>2017 Technica Women's Hackathon Best Use of Amazon Web Services Award Recipient</p></li>
-                <li><p>2016 The College of New Jersey Junior Computer Science Award Recipient</p></li>
-                <li><p>2016 Carl Shuster Mathematics Award Recipient</p></li>
-                <li><p>2016 Blue and Gold Leadership Hall of Fame Inductee</p></li>
-                <li><p>2015 Anita Borg Institute Grace Hopper Celebration Scholar</p></li>
-            </ul>    
-        </div>
-        <div id="tab3"></div>
-        <div style="background-color: #e6f7ff">and here</div>
-        <div id="tab4"></div>
-        <div style="background-color: #d9f2e6">and even here</div>
-        <div></div> 
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
     </body>    
 </html>
