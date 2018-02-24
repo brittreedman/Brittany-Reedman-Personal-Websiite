@@ -9,16 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
-    
-        // Controls scrolling
-        $('ul.nav').find('a').click(function(){
-            var $href = $(this).attr('href');
-            var $anchor = $('#' + $href).offset();
-            window.scrollTo($anchor.left,$anchor.top);
-            return false;
-        });
-        
-        // ul expand functionality
+
         function expand(id, index) {
             display = document.getElementById(id).style.display;
             if (display === "none") {
@@ -61,6 +52,7 @@
             }
             tabStuff();
         }
+
     
         function makeTransition(index) {
             topColor = (index === 0) ? sectionColors[index] : sectionColors[index - 1];
