@@ -28,7 +28,7 @@
             var found = false;
             for (i = size - 1; i >= 0 && sections.length != 0; i--) {
                 section = sections[i].getBoundingClientRect();
-                px = (section.top <= 1 && found == false) ? "3px" : "0px";
+                px = (section.top <= 61 && found == false) ? "3px" : "0px";
                 if (px === "3px") found = true;
                 document.getElementsByClassName('navlinks')[i].style.borderBottomWidth = px;
             }
@@ -65,6 +65,7 @@
     </script>
 </head>
 <body>
+    <div class="temp"></div>
     <div class="nav">
         <ul class="nav">     
             <li class="nav"><a class="navlinks" href="#tab1">HOME</a></li>
@@ -77,14 +78,28 @@
         <div>
             <div>
                 <img src="Images/me.png" width="200px" border="0">
-                <h1>Hi I'm Brittany</h1>
+                <h1>Brittany Reedman</h1>
                 <p>Senior at The College of New Jersey<p>
                 <p>Computer science and applied math double major<p>
-                <p>Future software engineer at Facebook Seattle<p>
+                <p>Future software engineer at Facebook<p>
                 <p>Find my resume <a href="ReedmanResume.pdf" target="_blank">here</a></p>
             </div>
         </div>
-        <div></div>
+        <div>
+            <h3><span class="expand" onclick="expand('skills', 0)">[+]</span> Skills</h3>
+            <ul id="skills" style="display: none;">
+                <li><p>Proficient: Java, Python, C, Typescript, Javascript, HTML, CSS, Node.js, Matlab, Mathematica<p></li>
+                <li><p>Past Experience: React.js, Scheme, OCaml, Prolog, C++, Excel VBA, Swift</p></li>
+            </ul>    
+            <h3><span class="expand" onclick="expand('industry', 1)">[+]</span> Experience</h3>
+            <ul id="industry" style="display: none;">
+                <li><p>August 2018: Future Software Engineer at Facebook</p></li>
+                <li><p>Spring 2018: Investigating Active Learning as a Mentored Research Student of Dr. Michael Bloodgood</p></li>
+                <li><p>Summer 2017: Software Engineering Intern at Microsft</p></li>
+                <li><p>Summer 2016: Explorer Intern at Microsoft</p></li>
+                <li><p>Fall 2016 to Fall 2017: Computer Science and Math Tutor</p></li> 
+            </ul>
+        </div>
         <div></div>
         <div></div>
     </div>
