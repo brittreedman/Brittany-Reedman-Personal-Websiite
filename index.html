@@ -28,7 +28,7 @@
             var found = false;
             for (i = size - 1; i >= 0 && sections.length != 0; i--) {
                 section = sections[i].getBoundingClientRect();
-                px = (section.top <= 61 && found == false) ? "3px" : "0px";
+                px = (section.top <= document.documentElement.clientHeight/3 && found == false) ? "3px" : "0px";
                 if (px === "3px") found = true;
                 document.getElementsByClassName('navlinks')[i].style.borderBottomWidth = px;
             }
