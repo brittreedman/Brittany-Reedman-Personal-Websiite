@@ -2,7 +2,7 @@ html {
     font-size: 16px;
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 6000px) {
     html {
         font-size:50px;
     }
